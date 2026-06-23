@@ -1,1023 +1,2135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elite Physio Care — Dr. Vaishnavi Kadam | Home Physiotherapy Pune</title>
-<meta name="description" content="Professional physiotherapy at home and online in Pune. Dr. Vaishnavi Kadam, BPT — Dhole Patil College. Book a home visit or online consultation today.">
-<meta name="keywords" content="physiotherapist Pune, home physiotherapy Pune, physiotherapy at home, online physiotherapy consultation, Elite Physio Care, Dr Vaishnavi Kadam">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Inter:wght@300;400;500;600&family=Switzer:wght@300;400;500&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Physio Care — Dr. Vaishnavi Kadam | Home Physiotherapy Pune</title>
+  <meta name="description"
+    content="Professional physiotherapy at home and online in Pune. Dr. Vaishnavi Kadam, BPT — Dhole Patil College. Book a home visit or online consultation today.">
+  <meta name="keywords"
+    content="physiotherapist Pune, home physiotherapy Pune, physiotherapy at home, online physiotherapy consultation, Elite Physio Care, Dr Vaishnavi Kadam">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Inter:wght@300;400;500;600&family=Switzer:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-<style>
-  :root {
-    --teal-900: #0a2e2b;
-    --teal-800: #0d3d38;
-    --teal-700: #0f5048;
-    --teal-600: #126358;
-    --teal-500: #158070;
-    --teal-400: #1aaa95;
-    --teal-300: #2ecab3;
-    --teal-200: #7de3d5;
-    --teal-100: #c4f2ec;
-    --teal-50: #edfaf8;
-    --sage-500: #7a9e7e;
-    --sage-400: #96b89a;
-    --sage-200: #c8deca;
-    --sage-100: #e8f2e9;
-    --blue-accent: #2563eb;
-    --blue-soft: #dbeafe;
-    --off-white: #FAFAF8;
-    --stone-100: #f5f3ef;
-    --stone-200: #ede9e2;
-    --stone-800: #2a2520;
-    --stone-900: #1a1610;
-    --ink: #1a1610;
-    --muted: #6b6560;
-    --border: rgba(26,22,16,0.10);
-    --radius-sm: 6px;
-    --radius-md: 12px;
-    --radius-lg: 20px;
-    --radius-xl: 32px;
-  }
+  <style>
+    :root {
+      --teal-900: #0a2e2b;
+      --teal-800: #0d3d38;
+      --teal-700: #0f5048;
+      --teal-600: #126358;
+      --teal-500: #158070;
+      --teal-400: #1aaa95;
+      --teal-300: #2ecab3;
+      --teal-200: #7de3d5;
+      --teal-100: #c4f2ec;
+      --teal-50: #edfaf8;
+      --sage-500: #7a9e7e;
+      --sage-400: #96b89a;
+      --sage-200: #c8deca;
+      --sage-100: #e8f2e9;
+      --blue-accent: #2563eb;
+      --blue-soft: #dbeafe;
+      --off-white: #FAFAF8;
+      --stone-100: #f5f3ef;
+      --stone-200: #ede9e2;
+      --stone-800: #2a2520;
+      --stone-900: #1a1610;
+      --ink: #1a1610;
+      --muted: #6b6560;
+      --border: rgba(26, 22, 16, 0.10);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+    }
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  html { scroll-behavior: smooth; font-size: 16px; }
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-  body {
-    font-family: 'Switzer', 'Inter', system-ui, sans-serif;
-    background: var(--off-white);
-    color: var(--ink);
-    overflow-x: hidden;
-    line-height: 1.6;
-  }
+    body {
+      font-family: 'Switzer', 'Inter', system-ui, sans-serif;
+      background: var(--off-white);
+      color: var(--ink);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
 
-  h1, h2, h3, h4 {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-  }
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
 
-  img { display: block; max-width: 100%; }
-  a { text-decoration: none; color: inherit; }
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
-  .container-wide { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-  /* ── NAV ── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0;
-    z-index: 100;
-    padding: 20px 40px;
-    display: flex; align-items: center; justify-content: space-between;
-    transition: all 0.4s ease;
-  }
-  nav.scrolled {
-    background: rgba(250,250,248,0.94);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border);
-    padding: 14px 40px;
-  }
-  .nav-logo {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    color: var(--teal-700);
-    letter-spacing: -0.04em;
-  }
-  .nav-logo span { color: var(--teal-400); }
-  .nav-links { display: flex; align-items: center; gap: 36px; }
-  .nav-links a {
-    font-size: 14px; font-weight: 500; color: var(--muted);
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--ink); }
-  .nav-cta {
-    background: var(--teal-700);
-    color: #fff;
-    padding: 10px 22px;
-    border-radius: 100px;
-    font-size: 14px; font-weight: 500;
-    transition: background 0.2s, transform 0.15s;
-  }
-  .nav-cta:hover { background: var(--teal-600); transform: scale(0.98); }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
 
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr;
-    align-items: center;
-    padding: 120px 0 80px;
-    position: relative;
-    overflow: hidden;
-    background: var(--off-white);
-  }
-  .hero-bg-shape {
-    position: absolute;
-    top: -200px; right: -300px;
-    width: 900px; height: 900px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--teal-100) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-bg-shape2 {
-    position: absolute;
-    bottom: -100px; left: -200px;
-    width: 600px; height: 600px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--sage-100) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-inner {
-    display: grid;
-    grid-template-columns: 1fr 420px;
-    gap: 80px;
-    align-items: end;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    position: relative;
-  }
-  .hero-eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--teal-50);
-    border: 1px solid var(--teal-100);
-    color: var(--teal-600);
-    font-size: 13px; font-weight: 500;
-    padding: 7px 14px;
-    border-radius: 100px;
-    margin-bottom: 32px;
-    opacity: 0; transform: translateY(20px);
-  }
-  .hero-eyebrow .dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--teal-400);
-    animation: pulse 2s ease infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(0.8); }
-  }
-  .hero-headline {
-    font-size: clamp(48px, 6vw, 92px);
-    font-weight: 900;
-    color: var(--stone-900);
-    letter-spacing: -0.04em;
-    line-height: 0.95;
-    margin-bottom: 28px;
-    opacity: 0; transform: translateY(40px);
-  }
-  .hero-headline .teal-word { color: var(--teal-600); }
-  .hero-sub {
-    font-size: 20px; font-weight: 400;
-    color: var(--muted);
-    max-width: 520px;
-    line-height: 1.6;
-    margin-bottom: 48px;
-    opacity: 0; transform: translateY(30px);
-  }
-  .hero-actions {
-    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
-    opacity: 0; transform: translateY(30px);
-  }
-  .btn-primary {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--teal-700);
-    color: #fff;
-    padding: 16px 32px;
-    border-radius: 100px;
-    font-size: 16px; font-weight: 500;
-    transition: background 0.2s, transform 0.15s;
-    border: none; cursor: pointer;
-  }
-  .btn-primary:hover { background: var(--teal-600); transform: scale(0.98); }
-  .btn-secondary {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: transparent;
-    color: var(--ink);
-    padding: 15px 24px;
-    border-radius: 100px;
-    font-size: 15px; font-weight: 500;
-    border: 1px solid var(--border);
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .btn-secondary:hover { background: var(--stone-100); border-color: var(--stone-200); }
-  .hero-trust-row {
-    display: flex; align-items: center; gap: 24px;
-    margin-top: 56px;
-    opacity: 0; transform: translateY(20px);
-  }
-  .trust-chip {
-    display: flex; align-items: center; gap: 8px;
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    padding: 10px 16px;
-    font-size: 13px; font-weight: 500;
-    color: var(--ink);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  }
-  .trust-chip .icon-wrap {
-    width: 28px; height: 28px;
-    border-radius: 8px;
-    background: var(--teal-50);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 14px;
-  }
-  .hero-photo-col {
-    position: relative;
-    opacity: 0; transform: translateX(40px);
-  }
-  .hero-photo-frame {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 3/4;
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-    background: var(--teal-100);
-  }
-  .hero-photo-placeholder {
-    width: 100%; height: 100%;
-    background: linear-gradient(160deg, var(--teal-200) 0%, var(--teal-400) 60%, var(--teal-700) 100%);
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    gap: 12px;
-    color: rgba(255,255,255,0.9);
-  }
-  .hero-avatar-circle {
-    width: 120px; height: 120px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.25);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 40px; font-weight: 800;
-    color: #fff;
-  }
-  .hero-photo-name {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 18px; font-weight: 700;
-    color: #fff;
-    text-align: center;
-  }
-  .hero-photo-title {
-    font-size: 13px; color: rgba(255,255,255,0.75);
-    text-align: center;
-  }
-  .hero-metric-float {
-    position: absolute;
-    background: #fff;
-    border-radius: var(--radius-md);
-    padding: 14px 18px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-    border: 1px solid var(--border);
-  }
-  .float-1 { bottom: 40px; left: -40px; }
-  .float-2 { top: 60px; right: -30px; }
-  .float-num {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 28px; font-weight: 800;
-    color: var(--teal-700);
-    line-height: 1;
-  }
-  .float-label { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .container-wide {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
 
-  /* ── SECTION LABELS ── */
-  .section-label {
-    display: inline-block;
-    font-size: 11px; font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--teal-600);
-    margin-bottom: 20px;
-  }
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.4s ease;
+    }
 
-  /* ── ABOUT ── */
-  .about {
-    background: var(--teal-900);
-    padding: 120px 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .about::before {
-    content: '';
-    position: absolute;
-    top: -300px; right: -200px;
-    width: 700px; height: 700px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(26,170,149,0.12) 0%, transparent 70%);
-  }
-  .about-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .about-headline {
-    font-size: clamp(40px, 4vw, 64px);
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: -0.04em;
-    line-height: 1.0;
-    margin-bottom: 24px;
-  }
-  .about-sub {
-    font-size: 17px; color: rgba(255,255,255,0.6);
-    line-height: 1.75; margin-bottom: 48px;
-  }
-  .about-timeline { position: relative; }
-  .about-timeline::before {
-    content: '';
-    position: absolute;
-    left: 16px; top: 20px; bottom: 0;
-    width: 1px;
-    background: rgba(255,255,255,0.1);
-  }
-  .timeline-item {
-    display: flex; gap: 28px;
-    margin-bottom: 44px;
-    position: relative;
-  }
-  .tl-dot {
-    width: 33px; height: 33px; flex-shrink: 0;
-    border-radius: 50%;
-    background: var(--teal-700);
-    border: 2px solid var(--teal-400);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 13px; color: var(--teal-200); font-weight: 600;
-    position: relative; z-index: 1;
-  }
-  .tl-content { padding-top: 4px; }
-  .tl-year {
-    font-size: 11px; font-weight: 600;
-    color: var(--teal-400);
-    letter-spacing: 0.1em; text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-  .tl-title {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 18px; font-weight: 700;
-    color: #fff; margin-bottom: 4px;
-  }
-  .tl-desc { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; }
-  .about-stats {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 20px; margin-top: 40px;
-  }
-  .about-stat {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: var(--radius-lg);
-    padding: 28px 24px;
-    transition: background 0.2s;
-  }
-  .about-stat:hover { background: rgba(255,255,255,0.08); }
-  .stat-num {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 48px; font-weight: 900;
-    color: var(--teal-300);
-    letter-spacing: -0.04em;
-    line-height: 1;
-  }
-  .stat-label { font-size: 14px; color: rgba(255,255,255,0.5); margin-top: 6px; }
+    nav.scrolled {
+      background: rgba(250, 250, 248, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 40px;
+    }
 
-  /* ── SERVICES ── */
-  .services {
-    padding: 120px 0;
-    background: var(--off-white);
-  }
-  .services-header {
-    max-width: 640px;
-    margin-bottom: 72px;
-  }
-  .services-headline {
-    font-size: clamp(36px, 4vw, 60px);
-    font-weight: 800; letter-spacing: -0.04em;
-    color: var(--stone-900);
-    margin-bottom: 16px;
-  }
-  .services-panels { display: flex; flex-direction: column; gap: 3px; }
-  .service-panel {
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-  }
-  .service-panel-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 480px;
-    transition: all 0.4s ease;
-  }
-  .sp-content {
-    padding: 60px 64px;
-    display: flex; flex-direction: column;
-    justify-content: space-between;
-  }
-  .sp-num {
-    font-size: 12px; font-weight: 600;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    opacity: 0.4; margin-bottom: 20px;
-  }
-  .sp-tag {
-    display: inline-block;
-    font-size: 11px; font-weight: 600;
-    letter-spacing: 0.08em; text-transform: uppercase;
-    padding: 5px 12px;
-    border-radius: 100px;
-    margin-bottom: 16px;
-  }
-  .sp-title {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: clamp(26px, 2.5vw, 40px);
-    font-weight: 800; letter-spacing: -0.03em;
-    line-height: 1.1;
-    margin-bottom: 16px;
-  }
-  .sp-desc { font-size: 15px; line-height: 1.7; margin-bottom: 32px; opacity: 0.7; }
-  .sp-benefits { list-style: none; margin-bottom: 40px; }
-  .sp-benefits li {
-    display: flex; align-items: center; gap: 10px;
-    font-size: 14px; padding: 6px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-  }
-  .sp-benefits li:last-child { border-bottom: none; }
-  .sp-benefits li::before {
-    content: '';
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: currentColor;
-    flex-shrink: 0;
-    opacity: 0.5;
-  }
-  .sp-price-row { display: flex; align-items: baseline; gap: 8px; }
-  .sp-price {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 40px; font-weight: 900;
-    letter-spacing: -0.04em;
-    line-height: 1;
-  }
-  .sp-price-label { font-size: 13px; opacity: 0.5; }
-  .sp-btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 14px 28px;
-    border-radius: 100px;
-    font-size: 15px; font-weight: 500;
-    cursor: pointer; border: none;
-    transition: transform 0.15s, opacity 0.15s;
-    margin-top: 24px;
-    width: fit-content;
-  }
-  .sp-btn:hover { transform: scale(0.97); }
-  .sp-visual {
-    position: relative;
-    overflow: hidden;
-  }
-  .sp-visual-bg {
-    position: absolute; inset: 0;
-    background-size: cover; background-position: center;
-  }
-  .sp-visual-overlay {
-    position: absolute; inset: 0;
-    display: flex; align-items: flex-end;
-    padding: 40px;
-  }
-  .sp-recommend-badge {
-    position: absolute;
-    top: 24px; right: 24px;
-    background: #fff;
-    color: var(--teal-700);
-    font-size: 12px; font-weight: 600;
-    padding: 7px 14px;
-    border-radius: 100px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  }
-  /* Service panel 1 — Online */
-  .panel-online { background: var(--stone-100); }
-  .panel-online .sp-num { color: var(--ink); }
-  .panel-online .sp-tag { background: var(--teal-50); color: var(--teal-600); }
-  .panel-online .sp-title { color: var(--stone-900); }
-  .panel-online .sp-desc { color: var(--stone-800); }
-  .panel-online .sp-benefits li { color: var(--stone-800); }
-  .panel-online .sp-price { color: var(--teal-700); }
-  .panel-online .sp-btn { background: var(--teal-700); color: #fff; }
-  .panel-online .sp-visual-bg { background: linear-gradient(135deg, var(--teal-200) 0%, var(--teal-500) 100%); }
-  /* Service panel 2 — Home Visit */
-  .panel-home { background: var(--teal-900); }
-  .panel-home .sp-num { color: rgba(255,255,255,0.4); }
-  .panel-home .sp-tag { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); }
-  .panel-home .sp-title { color: #fff; }
-  .panel-home .sp-desc { color: rgba(255,255,255,0.55); }
-  .panel-home .sp-benefits li { color: rgba(255,255,255,0.7); border-bottom-color: rgba(255,255,255,0.08); }
-  .panel-home .sp-price { color: var(--teal-300); }
-  .panel-home .sp-btn { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
-  .panel-home .sp-visual-bg { background: linear-gradient(135deg, var(--teal-700) 0%, var(--teal-900) 100%); }
-  /* Service panel 3 — Program (Recommended) */
-  .panel-program { background: var(--teal-600); }
-  .panel-program .sp-num { color: rgba(255,255,255,0.4); }
-  .panel-program .sp-tag { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.9); }
-  .panel-program .sp-title { color: #fff; }
-  .panel-program .sp-desc { color: rgba(255,255,255,0.65); }
-  .panel-program .sp-benefits li { color: rgba(255,255,255,0.8); border-bottom-color: rgba(255,255,255,0.1); }
-  .panel-program .sp-price { color: #fff; }
-  .panel-program .sp-btn { background: #fff; color: var(--teal-700); }
-  .panel-program .sp-visual-bg { background: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-700) 100%); }
-  /* Visual pattern overlays */
-  .visual-pattern {
-    position: absolute; inset: 0;
-    opacity: 0.15;
-    background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px),
-                      radial-gradient(circle at 75% 75%, white 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
-  .visual-icon-large {
-    position: absolute;
-    bottom: -30px; right: -30px;
-    font-size: 180px;
-    opacity: 0.08;
-    color: #fff;
-    line-height: 1;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 900;
-    pointer-events: none;
-  }
+    .nav-logo {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--teal-700);
+      letter-spacing: -0.04em;
+      z-index: 101;
+    }
 
-  /* ── CONDITIONS ── */
-  .conditions {
-    padding: 120px 0;
-    background: var(--stone-100);
-  }
-  .conditions-header { margin-bottom: 64px; }
-  .conditions-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-  }
-  .condition-card {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    padding: 28px 24px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .condition-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 3px;
-    background: var(--teal-400);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-  .condition-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 48px rgba(0,0,0,0.08);
-    border-color: var(--teal-200);
-  }
-  .condition-card:hover::before { transform: scaleX(1); }
-  .condition-icon {
-    width: 48px; height: 48px;
-    border-radius: var(--radius-md);
-    background: var(--teal-50);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px;
-    margin-bottom: 16px;
-    transition: background 0.2s;
-  }
-  .condition-card:hover .condition-icon { background: var(--teal-100); }
-  .condition-name {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 18px; font-weight: 700;
-    color: var(--stone-900); margin-bottom: 8px;
-    letter-spacing: -0.02em;
-  }
-  .condition-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .nav-logo span {
+      color: var(--teal-400);
+    }
 
-  /* ── WHY PATIENTS STAY ── */
-  .trust {
-    padding: 120px 0;
-    background: var(--off-white);
-  }
-  .trust-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    align-items: start;
-  }
-  .trust-headline {
-    font-size: clamp(36px, 4vw, 60px);
-    font-weight: 800; letter-spacing: -0.04em;
-    color: var(--stone-900);
-    margin-bottom: 20px;
-  }
-  .trust-sub { font-size: 17px; color: var(--muted); line-height: 1.7; margin-bottom: 40px; }
-  .trust-features { display: flex; flex-direction: column; gap: 0; }
-  .trust-feature {
-    display: flex; gap: 24px;
-    padding: 28px 0;
-    border-bottom: 1px solid var(--border);
-    transition: padding-left 0.3s ease;
-    cursor: default;
-  }
-  .trust-feature:first-child { border-top: 1px solid var(--border); }
-  .trust-feature:hover { padding-left: 8px; }
-  .tf-icon {
-    width: 44px; height: 44px; flex-shrink: 0;
-    border-radius: var(--radius-md);
-    background: var(--teal-50);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; color: var(--teal-600);
-    transition: background 0.2s;
-  }
-  .trust-feature:hover .tf-icon { background: var(--teal-100); }
-  .tf-title {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 18px; font-weight: 700;
-    color: var(--stone-900); margin-bottom: 4px;
-  }
-  .tf-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
 
-  /* ── JOURNEY ── */
-  .journey {
-    padding: 120px 0;
-    background: var(--teal-900);
-    position: relative; overflow: hidden;
-  }
-  .journey::before {
-    content: '';
-    position: absolute; top: -400px; left: 50%;
-    transform: translateX(-50%);
-    width: 800px; height: 800px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(26,170,149,0.08) 0%, transparent 70%);
-  }
-  .journey-header { text-align: center; margin-bottom: 80px; }
-  .journey-headline {
-    font-size: clamp(40px, 4vw, 64px);
-    font-weight: 800; letter-spacing: -0.04em;
-    color: #fff; margin-bottom: 16px;
-  }
-  .journey-sub { font-size: 18px; color: rgba(255,255,255,0.5); max-width: 480px; margin: 0 auto; }
-  .journey-track {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0;
-    position: relative;
-    max-width: 1000px; margin: 0 auto;
-  }
-  .journey-track::before {
-    content: '';
-    position: absolute;
-    top: 40px; left: 10%; right: 10%;
-    height: 1px;
-    background: rgba(255,255,255,0.1);
-    z-index: 0;
-  }
-  .journey-progress-line {
-    position: absolute;
-    top: 40px; left: 10%;
-    height: 1px;
-    background: var(--teal-400);
-    z-index: 1;
-    width: 0;
-    transition: width 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-  }
-  .journey-step {
-    display: flex; flex-direction: column; align-items: center;
-    text-align: center;
-    padding: 0 12px;
-    position: relative; z-index: 2;
-  }
-  .step-dot {
-    width: 80px; height: 80px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.12);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 26px;
-    margin-bottom: 20px;
-    transition: all 0.4s ease;
-  }
-  .journey-step.active .step-dot {
-    background: var(--teal-700);
-    border-color: var(--teal-400);
-    box-shadow: 0 0 0 6px rgba(26,170,149,0.15);
-  }
-  .step-num {
-    font-size: 11px; font-weight: 600;
-    color: var(--teal-400); letter-spacing: 0.1em;
-    text-transform: uppercase; margin-bottom: 8px;
-  }
-  .step-label {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 16px; font-weight: 700;
-    color: rgba(255,255,255,0.7);
-    letter-spacing: -0.02em;
-  }
-  .journey-step.active .step-label { color: #fff; }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
 
-  /* ── TESTIMONIALS ── */
-  .testimonials {
-    padding: 120px 0;
-    background: var(--stone-100);
-  }
-  .testimonials-header { margin-bottom: 72px; }
-  .testimonials-headline {
-    font-size: clamp(36px, 4vw, 56px);
-    font-weight: 800; letter-spacing: -0.04em;
-    color: var(--stone-900); margin-bottom: 16px;
-  }
-  .testimonials-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-  }
-  .testi-main {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    background: var(--teal-900);
-    border-radius: var(--radius-xl);
-    padding: 56px 52px;
-    display: flex; flex-direction: column; justify-content: space-between;
-  }
-  .testi-quote {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: clamp(20px, 2vw, 28px);
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.35;
-    letter-spacing: -0.02em;
-    margin-bottom: 40px;
-    flex: 1;
-  }
-  .testi-quote::before {
-    content: '"';
-    font-size: 80px; line-height: 0.8;
-    color: var(--teal-400);
-    display: block; margin-bottom: 16px;
-    font-family: 'Cabinet Grotesk', sans-serif;
-  }
-  .testi-author { display: flex; align-items: center; gap: 16px; }
-  .author-avatar {
-    width: 48px; height: 48px; border-radius: 50%;
-    background: var(--teal-600);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 18px; font-weight: 800; color: #fff;
-  }
-  .author-name {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 16px; font-weight: 700; color: #fff;
-  }
-  .author-detail { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 2px; }
-  .testi-secondary {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-xl);
-    padding: 36px 40px;
-  }
-  .testi-secondary .testi-quote {
-    color: var(--stone-900);
-    font-size: 18px;
-    margin-bottom: 24px;
-  }
-  .testi-secondary .testi-quote::before {
-    font-size: 56px;
-    color: var(--teal-400);
-  }
-  .testi-secondary .author-name { color: var(--stone-900); }
-  .testi-secondary .author-detail { color: var(--muted); }
-  .testi-stars { display: flex; gap: 4px; margin-bottom: 16px; }
-  .star { color: #f59e0b; font-size: 16px; }
-  .testi-highlight {
-    background: var(--teal-600);
-    border-radius: var(--radius-xl);
-    padding: 36px 40px;
-  }
-  .testi-highlight .testi-quote {
-    color: #fff; font-size: 18px; margin-bottom: 24px;
-  }
-  .testi-highlight .testi-quote::before { color: rgba(255,255,255,0.4); font-size: 56px; }
-  .testi-highlight .author-name { color: #fff; }
-  .testi-highlight .author-detail { color: rgba(255,255,255,0.6); }
+    .nav-links a:hover {
+      color: var(--ink);
+    }
 
-  /* ── BOOKING / CTA ── */
-  .booking {
-    padding: 120px 0;
-    background: var(--off-white);
-  }
-  .booking-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-  .booking-headline {
-    font-size: clamp(36px, 4vw, 60px);
-    font-weight: 800; letter-spacing: -0.04em;
-    color: var(--stone-900); margin-bottom: 20px;
-  }
-  .booking-sub { font-size: 17px; color: var(--muted); line-height: 1.7; margin-bottom: 48px; }
-  .booking-options { display: flex; flex-direction: column; gap: 16px; }
-  .booking-option {
-    display: flex; align-items: center; gap: 20px;
-    padding: 24px 28px;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
-    background: #fff;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none; color: inherit;
-  }
-  .booking-option:hover {
-    border-color: var(--teal-300);
-    transform: translateX(4px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.06);
-  }
-  .bo-icon {
-    width: 52px; height: 52px; border-radius: var(--radius-md);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 24px; flex-shrink: 0;
-  }
-  .bo-title { font-family: 'Cabinet Grotesk', sans-serif; font-size: 18px; font-weight: 700; color: var(--stone-900); }
-  .bo-desc { font-size: 13px; color: var(--muted); margin-top: 2px; }
-  .bo-arrow { margin-left: auto; font-size: 20px; color: var(--muted); }
-  .form-card {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-xl);
-    padding: 48px 44px;
-    box-shadow: 0 8px 48px rgba(0,0,0,0.06);
-  }
-  .form-title {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 24px; font-weight: 800;
-    color: var(--stone-900); margin-bottom: 8px;
-    letter-spacing: -0.03em;
-  }
-  .form-subtitle { font-size: 14px; color: var(--muted); margin-bottom: 32px; }
-  .form-group { margin-bottom: 20px; }
-  .form-group label {
-    display: block;
-    font-size: 13px; font-weight: 500;
-    color: var(--stone-800); margin-bottom: 8px;
-  }
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    padding: 13px 16px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    font-size: 15px;
-    font-family: inherit;
-    color: var(--ink);
-    background: var(--off-white);
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    appearance: none;
-  }
-  .form-group input:focus,
-  .form-group select:focus {
-    border-color: var(--teal-400);
-    box-shadow: 0 0 0 3px rgba(26,170,149,0.12);
-    background: #fff;
-  }
-  .form-submit {
-    width: 100%;
-    padding: 16px;
-    background: var(--teal-700);
-    color: #fff;
-    border: none;
-    border-radius: var(--radius-md);
-    font-size: 16px; font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
-    margin-top: 8px;
-  }
-  .form-submit:hover { background: var(--teal-600); transform: scale(0.99); }
+    .nav-cta {
+      background: var(--teal-700);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.15s;
+    }
 
-  /* ── FOOTER ── */
-  footer {
-    background: var(--stone-900);
-    padding: 72px 0 40px;
-  }
-  .footer-inner {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 60px;
-    margin-bottom: 60px;
-  }
-  .footer-brand-name {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 22px; font-weight: 800;
-    color: #fff; letter-spacing: -0.04em;
-    margin-bottom: 12px;
-  }
-  .footer-brand-name span { color: var(--teal-400); }
-  .footer-tagline { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.6; max-width: 240px; }
-  .footer-heading {
-    font-size: 12px; font-weight: 600;
-    letter-spacing: 0.1em; text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
-    margin-bottom: 20px;
-  }
-  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-  .footer-links a { font-size: 14px; color: rgba(255,255,255,0.6); transition: color 0.2s; }
-  .footer-links a:hover { color: #fff; }
-  .footer-bottom {
-    display: flex; justify-content: space-between; align-items: center;
-    padding-top: 32px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  .footer-copy { font-size: 13px; color: rgba(255,255,255,0.3); }
+    .nav-cta:hover {
+      background: var(--teal-600);
+      transform: scale(0.98);
+    }
 
-  /* ── STICKY CTA ── */
-  .sticky-cta {
-    position: fixed;
-    bottom: 32px; right: 32px;
-    z-index: 90;
-    display: flex; flex-direction: column; gap: 12px;
-    align-items: flex-end;
-  }
-  .sticky-wa {
-    display: flex; align-items: center; gap: 10px;
-    background: #25D366;
-    color: #fff;
-    padding: 14px 22px;
-    border-radius: 100px;
-    font-size: 14px; font-weight: 500;
-    box-shadow: 0 8px 32px rgba(37,211,102,0.35);
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-decoration: none;
-  }
-  .sticky-wa:hover { transform: scale(1.03); box-shadow: 0 12px 40px rgba(37,211,102,0.45); }
-  .sticky-call {
-    display: flex; align-items: center; justify-content: center;
-    width: 52px; height: 52px;
-    border-radius: 50%;
-    background: var(--teal-700);
-    color: #fff;
-    font-size: 20px;
-    box-shadow: 0 6px 24px rgba(15,80,72,0.35);
-    transition: transform 0.2s;
-    text-decoration: none;
-  }
-  .sticky-call:hover { transform: scale(1.05); }
-  .wa-icon { font-size: 20px; }
+    /* Mobile Menu */
+    .nav-mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 101;
+      background: none;
+      border: none;
+    }
 
-  /* ── REVEAL ANIMATIONS ── */
-  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s ease, transform 0.8s ease; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-  .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s ease, transform 0.8s ease; }
-  .reveal-left.visible { opacity: 1; transform: translateX(0); }
-  .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
-  .reveal-right.visible { opacity: 1; transform: translateX(0); }
+    .nav-mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--teal-700);
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    nav { padding: 16px 24px; }
-    nav.scrolled { padding: 12px 24px; }
-    .nav-links { display: none; }
-    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
-    .hero-photo-col { display: none; }
-    .about-inner { grid-template-columns: 1fr; gap: 48px; }
-    .service-panel-inner { grid-template-columns: 1fr; }
-    .sp-visual { min-height: 220px; }
-    .conditions-grid { grid-template-columns: repeat(2, 1fr); }
-    .trust-inner { grid-template-columns: 1fr; gap: 48px; }
-    .journey-track { grid-template-columns: repeat(3, 1fr); gap: 0; }
-    .journey-track::before { display: none; }
-    .journey-progress-line { display: none; }
-    .testimonials-layout { grid-template-columns: 1fr; }
-    .testi-main { grid-column: 1; grid-row: auto; }
-    .booking-inner { grid-template-columns: 1fr; gap: 48px; }
-    .footer-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
-    .container { padding: 0 24px; }
-    .container-wide { padding: 0 24px; }
-  }
-  @media (max-width: 600px) {
-    .about-stats { grid-template-columns: 1fr 1fr; }
-    .conditions-grid { grid-template-columns: 1fr 1fr; }
-    .footer-inner { grid-template-columns: 1fr; }
-  }
-</style>
+    .nav-mobile-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
 
-<!-- Schema Markup -->
-<script type="application/ld+json">
+    .nav-mobile-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-mobile-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .nav-mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 280px;
+      height: 100vh;
+      background: rgba(250, 250, 248, 0.98);
+      backdrop-filter: blur(20px);
+      padding: 80px 32px 32px;
+      transition: right 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .nav-mobile-menu.active {
+      right: 0;
+    }
+
+    .nav-mobile-menu a {
+      padding: 16px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ink);
+      border-radius: var(--radius-md);
+      transition: all 0.2s;
+    }
+
+    .nav-mobile-menu a:hover {
+      background: var(--teal-50);
+      color: var(--teal-700);
+    }
+
+    .nav-mobile-menu .nav-cta {
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr;
+      align-items: center;
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+      background: var(--off-white);
+    }
+
+    .hero-bg-shape {
+      position: absolute;
+      top: -200px;
+      right: -300px;
+      width: 900px;
+      height: 900px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--teal-100) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-bg-shape2 {
+      position: absolute;
+      bottom: -100px;
+      left: -200px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--sage-100) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 80px;
+      align-items: end;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--teal-50);
+      border: 1px solid var(--teal-100);
+      color: var(--teal-600);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .hero-eyebrow .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal-400);
+      animation: pulse 2s ease infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.8);
+      }
+    }
+
+    .hero-headline {
+      font-size: clamp(48px, 6vw, 92px);
+      font-weight: 900;
+      color: var(--stone-900);
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin-bottom: 28px;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .hero-headline .teal-word {
+      color: var(--teal-600);
+    }
+
+    .hero-sub {
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.6;
+      margin-bottom: 48px;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--teal-700);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 100px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: var(--teal-600);
+      transform: scale(0.98);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--ink);
+      padding: 15px 24px;
+      border-radius: 100px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: var(--stone-100);
+      border-color: var(--stone-200);
+    }
+
+    .hero-trust-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 56px;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .trust-chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .trust-chip .icon-wrap {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--teal-50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .hero-photo-col {
+      position: relative;
+      opacity: 0;
+      transform: translateX(40px);
+    }
+
+    .hero-photo-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: var(--teal-100);
+    }
+
+    .hero-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(160deg, var(--teal-200) 0%, var(--teal-400) 60%, var(--teal-700) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-avatar-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .hero-photo-name {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-photo-title {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.75);
+      text-align: center;
+    }
+
+    .hero-metric-float {
+      position: absolute;
+      background: #fff;
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+      border: 1px solid var(--border);
+    }
+
+    .float-1 {
+      bottom: 40px;
+      left: -40px;
+    }
+
+    .float-2 {
+      top: 60px;
+      right: -30px;
+    }
+
+    .float-num {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--teal-700);
+      line-height: 1;
+    }
+
+    .float-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* ── SECTION LABELS ── */
+    .section-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal-600);
+      margin-bottom: 20px;
+    }
+
+    /* ── ABOUT ── */
+    .about {
+      background: var(--teal-900);
+      padding: 120px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about::before {
+      content: '';
+      position: absolute;
+      top: -300px;
+      right: -200px;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(26, 170, 149, 0.12) 0%, transparent 70%);
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about-headline {
+      font-size: clamp(40px, 4vw, 64px);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.04em;
+      line-height: 1.0;
+      margin-bottom: 24px;
+    }
+
+    .about-sub {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.75;
+      margin-bottom: 48px;
+    }
+
+    .about-timeline {
+      position: relative;
+    }
+
+    .about-timeline::before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      top: 20px;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 44px;
+      position: relative;
+    }
+
+    .tl-dot {
+      width: 33px;
+      height: 33px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--teal-700);
+      border: 2px solid var(--teal-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--teal-200);
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tl-content {
+      padding-top: 4px;
+    }
+
+    .tl-year {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--teal-400);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .tl-title {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .tl-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.6;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .about-stat {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      transition: background 0.2s;
+    }
+
+    .about-stat:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .stat-num {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--teal-300);
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 6px;
+    }
+
+    /* ── SERVICES ── */
+    .services {
+      padding: 120px 0;
+      background: var(--off-white);
+    }
+
+    .services-header {
+      max-width: 640px;
+      margin-bottom: 72px;
+    }
+
+    .services-headline {
+      font-size: clamp(36px, 4vw, 60px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--stone-900);
+      margin-bottom: 16px;
+    }
+
+    .services-panels {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .service-panel {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .service-panel-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 480px;
+      transition: all 0.4s ease;
+    }
+
+    .sp-content {
+      padding: 60px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sp-num {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      margin-bottom: 20px;
+    }
+
+    .sp-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    .sp-title {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: clamp(26px, 2.5vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .sp-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      opacity: 0.7;
+    }
+
+    .sp-benefits {
+      list-style: none;
+      margin-bottom: 40px;
+    }
+
+    .sp-benefits li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .sp-benefits li:last-child {
+      border-bottom: none;
+    }
+
+    .sp-benefits li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+      flex-shrink: 0;
+      opacity: 0.5;
+    }
+
+    .sp-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .sp-price {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .sp-price-label {
+      font-size: 13px;
+      opacity: 0.5;
+    }
+
+    .sp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 100px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.15s, opacity 0.15s;
+      margin-top: 24px;
+      width: fit-content;
+    }
+
+    .sp-btn:hover {
+      transform: scale(0.97);
+    }
+
+    .sp-visual {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sp-visual-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .sp-visual-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 40px;
+    }
+
+    .sp-recommend-badge {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: #fff;
+      color: var(--teal-700);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Service panel 1 — Online */
+    .panel-online {
+      background: var(--stone-100);
+    }
+
+    .panel-online .sp-num {
+      color: var(--ink);
+    }
+
+    .panel-online .sp-tag {
+      background: var(--teal-50);
+      color: var(--teal-600);
+    }
+
+    .panel-online .sp-title {
+      color: var(--stone-900);
+    }
+
+    .panel-online .sp-desc {
+      color: var(--stone-800);
+    }
+
+    .panel-online .sp-benefits li {
+      color: var(--stone-800);
+    }
+
+    .panel-online .sp-price {
+      color: var(--teal-700);
+    }
+
+    .panel-online .sp-btn {
+      background: var(--teal-700);
+      color: #fff;
+    }
+
+    .panel-online .sp-visual-bg {
+      background: linear-gradient(135deg, var(--teal-200) 0%, var(--teal-500) 100%);
+    }
+
+    /* Service panel 2 — Home Visit */
+    .panel-home {
+      background: var(--teal-900);
+    }
+
+    .panel-home .sp-num {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .panel-home .sp-tag {
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .panel-home .sp-title {
+      color: #fff;
+    }
+
+    .panel-home .sp-desc {
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .panel-home .sp-benefits li {
+      color: rgba(255, 255, 255, 0.7);
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .panel-home .sp-price {
+      color: var(--teal-300);
+    }
+
+    .panel-home .sp-btn {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .panel-home .sp-visual-bg {
+      background: linear-gradient(135deg, var(--teal-700) 0%, var(--teal-900) 100%);
+    }
+
+    /* Service panel 3 — Program (Recommended) */
+    .panel-program {
+      background: var(--teal-600);
+    }
+
+    .panel-program .sp-num {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .panel-program .sp-tag {
+      background: rgba(255, 255, 255, 0.15);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .panel-program .sp-title {
+      color: #fff;
+    }
+
+    .panel-program .sp-desc {
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .panel-program .sp-benefits li {
+      color: rgba(255, 255, 255, 0.8);
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .panel-program .sp-price {
+      color: #fff;
+    }
+
+    .panel-program .sp-btn {
+      background: #fff;
+      color: var(--teal-700);
+    }
+
+    .panel-program .sp-visual-bg {
+      background: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-700) 100%);
+    }
+
+    /* Visual pattern overlays */
+    .visual-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+      background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, white 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .visual-icon-large {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      font-size: 180px;
+      opacity: 0.08;
+      color: #fff;
+      line-height: 1;
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-weight: 900;
+      pointer-events: none;
+    }
+
+    /* ── CONDITIONS ── */
+    .conditions {
+      padding: 120px 0;
+      background: var(--stone-100);
+    }
+
+    .conditions-header {
+      margin-bottom: 64px;
+    }
+
+    .conditions-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .condition-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .condition-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--teal-400);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .condition-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+      border-color: var(--teal-200);
+    }
+
+    .condition-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .condition-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: var(--teal-50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+      transition: background 0.2s;
+    }
+
+    .condition-card:hover .condition-icon {
+      background: var(--teal-100);
+    }
+
+    .condition-name {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--stone-900);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .condition-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── WHY PATIENTS STAY ── */
+    .trust {
+      padding: 120px 0;
+      background: var(--off-white);
+    }
+
+    .trust-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: start;
+    }
+
+    .trust-headline {
+      font-size: clamp(36px, 4vw, 60px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--stone-900);
+      margin-bottom: 20px;
+    }
+
+    .trust-sub {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .trust-features {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .trust-feature {
+      display: flex;
+      gap: 24px;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      transition: padding-left 0.3s ease;
+      cursor: default;
+    }
+
+    .trust-feature:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .trust-feature:hover {
+      padding-left: 8px;
+    }
+
+    .tf-icon {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: var(--radius-md);
+      background: var(--teal-50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--teal-600);
+      transition: background 0.2s;
+    }
+
+    .trust-feature:hover .tf-icon {
+      background: var(--teal-100);
+    }
+
+    .tf-title {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--stone-900);
+      margin-bottom: 4px;
+    }
+
+    .tf-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ── JOURNEY ── */
+    .journey {
+      padding: 120px 0;
+      background: var(--teal-900);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .journey::before {
+      content: '';
+      position: absolute;
+      top: -400px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(26, 170, 149, 0.08) 0%, transparent 70%);
+    }
+
+    .journey-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .journey-headline {
+      font-size: clamp(40px, 4vw, 64px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .journey-sub {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.5);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .journey-track {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0;
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .journey-track::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      z-index: 0;
+    }
+
+    .journey-progress-line {
+      position: absolute;
+      top: 40px;
+      left: 10%;
+      height: 1px;
+      background: var(--teal-400);
+      z-index: 1;
+      width: 0;
+      transition: width 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .journey-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .step-dot {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      transition: all 0.4s ease;
+    }
+
+    .journey-step.active .step-dot {
+      background: var(--teal-700);
+      border-color: var(--teal-400);
+      box-shadow: 0 0 0 6px rgba(26, 170, 149, 0.15);
+    }
+
+    .step-num {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--teal-400);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .step-label {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: -0.02em;
+    }
+
+    .journey-step.active .step-label {
+      color: #fff;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials {
+      padding: 120px 0;
+      background: var(--stone-100);
+    }
+
+    .testimonials-header {
+      margin-bottom: 72px;
+    }
+
+    .testimonials-headline {
+      font-size: clamp(36px, 4vw, 56px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--stone-900);
+      margin-bottom: 16px;
+    }
+
+    .testimonials-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+    }
+
+    .testi-main {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      background: var(--teal-900);
+      border-radius: var(--radius-xl);
+      padding: 56px 52px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .testi-quote {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: clamp(20px, 2vw, 28px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      margin-bottom: 40px;
+      flex: 1;
+    }
+
+    .testi-quote::before {
+      content: '"';
+      font-size: 80px;
+      line-height: 0.8;
+      color: var(--teal-400);
+      display: block;
+      margin-bottom: 16px;
+      font-family: 'Cabinet Grotesk', sans-serif;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--teal-600);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .author-name {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .author-detail {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 2px;
+    }
+
+    .testi-secondary {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 36px 40px;
+    }
+
+    .testi-secondary .testi-quote {
+      color: var(--stone-900);
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .testi-secondary .testi-quote::before {
+      font-size: 56px;
+      color: var(--teal-400);
+    }
+
+    .testi-secondary .author-name {
+      color: var(--stone-900);
+    }
+
+    .testi-secondary .author-detail {
+      color: var(--muted);
+    }
+
+    .testi-stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+
+    .star {
+      color: #f59e0b;
+      font-size: 16px;
+    }
+
+    .testi-highlight {
+      background: var(--teal-600);
+      border-radius: var(--radius-xl);
+      padding: 36px 40px;
+    }
+
+    .testi-highlight .testi-quote {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .testi-highlight .testi-quote::before {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 56px;
+    }
+
+    .testi-highlight .author-name {
+      color: #fff;
+    }
+
+    .testi-highlight .author-detail {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* ── BOOKING / CTA ── */
+    .booking {
+      padding: 120px 0;
+      background: var(--off-white);
+    }
+
+    .booking-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .booking-headline {
+      font-size: clamp(36px, 4vw, 60px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--stone-900);
+      margin-bottom: 20px;
+    }
+
+    .booking-sub {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+
+    .booking-options {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .booking-option {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 24px 28px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .booking-option:hover {
+      border-color: var(--teal-300);
+      transform: translateX(4px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    }
+
+    .bo-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .bo-title {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--stone-900);
+    }
+
+    .bo-desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .bo-arrow {
+      margin-left: auto;
+      font-size: 20px;
+      color: var(--muted);
+    }
+
+    .form-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 48px 44px;
+      box-shadow: 0 8px 48px rgba(0, 0, 0, 0.06);
+    }
+
+    .form-title {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--stone-900);
+      margin-bottom: 8px;
+      letter-spacing: -0.03em;
+    }
+
+    .form-subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--stone-800);
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      font-size: 15px;
+      font-family: inherit;
+      color: var(--ink);
+      background: var(--off-white);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--teal-400);
+      box-shadow: 0 0 0 3px rgba(26, 170, 149, 0.12);
+      background: #fff;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--teal-700);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-md);
+      font-size: 16px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 8px;
+    }
+
+    .form-submit:hover {
+      background: var(--teal-600);
+      transform: scale(0.99);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--stone-900);
+      padding: 72px 0 40px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand-name {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand-name span {
+      color: var(--teal-400);
+    }
+
+    .footer-tagline {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.45);
+      line-height: 1.6;
+      max-width: 240px;
+    }
+
+    .footer-heading {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ── STICKY CTA ── */
+    .sticky-cta {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+    }
+
+    .sticky-wa {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 22px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 8px 32px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+
+    .sticky-wa:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
+    }
+
+    .sticky-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--teal-700);
+      color: #fff;
+      font-size: 20px;
+      box-shadow: 0 6px 24px rgba(15, 80, 72, 0.35);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+
+    .sticky-call:hover {
+      transform: scale(1.05);
+    }
+
+    .wa-icon {
+      font-size: 20px;
+    }
+
+    /* ── REVEAL ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav {
+        padding: 16px 24px;
+      }
+
+      nav.scrolled {
+        padding: 12px 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-mobile-toggle {
+        display: flex;
+      }
+
+      .hero {
+        padding: 100px 0 60px;
+        min-height: auto;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding: 0 24px;
+      }
+
+      .hero-headline {
+        font-size: clamp(40px, 10vw, 72px);
+        line-height: 1.0;
+      }
+
+      .hero-sub {
+        font-size: 18px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .hero-actions .btn-primary,
+      .hero-actions .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-trust-row {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .trust-chip {
+        flex: 1;
+        min-width: calc(50% - 6px);
+        justify-content: center;
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+
+      .hero-photo-col {
+        display: none;
+      }
+
+      .about {
+        padding: 80px 0;
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .about-headline {
+        font-size: clamp(32px, 8vw, 52px);
+      }
+
+      .about-sub {
+        font-size: 16px;
+      }
+
+      .services {
+        padding: 80px 0;
+      }
+
+      .services-headline {
+        font-size: clamp(32px, 8vw, 48px);
+      }
+
+      .service-panel-inner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .sp-content {
+        padding: 40px 28px;
+      }
+
+      .sp-title {
+        font-size: clamp(24px, 6vw, 32px);
+      }
+
+      .sp-visual {
+        min-height: 200px;
+      }
+
+      .sp-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .conditions {
+        padding: 80px 0;
+      }
+
+      .conditions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .condition-card {
+        padding: 20px 16px;
+      }
+
+      .condition-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+
+      .condition-name {
+        font-size: 16px;
+      }
+
+      .trust {
+        padding: 80px 0;
+      }
+
+      .trust-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .trust-headline {
+        font-size: clamp(32px, 8vw, 48px);
+      }
+
+      .trust-sub {
+        font-size: 16px;
+      }
+
+      .trust-feature {
+        padding: 20px 0;
+        gap: 16px;
+      }
+
+      .tf-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+
+      .journey {
+        padding: 80px 0;
+      }
+
+      .journey-headline {
+        font-size: clamp(32px, 8vw, 52px);
+      }
+
+      .journey-sub {
+        font-size: 16px;
+      }
+
+      .journey-track {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
+      .journey-track::before {
+        display: none;
+      }
+
+      .journey-progress-line {
+        display: none;
+      }
+
+      .step-dot {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+      }
+
+      .step-label {
+        font-size: 14px;
+      }
+
+      .testimonials {
+        padding: 80px 0;
+      }
+
+      .testimonials-headline {
+        font-size: clamp(32px, 8vw, 44px);
+      }
+
+      .testimonials-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .testi-main {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 40px 32px;
+      }
+
+      .testi-quote {
+        font-size: clamp(18px, 4vw, 24px);
+        margin-bottom: 32px;
+      }
+
+      .testi-secondary,
+      .testi-highlight {
+        padding: 28px 24px;
+      }
+
+      .booking {
+        padding: 80px 0;
+      }
+
+      .booking-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .booking-headline {
+        font-size: clamp(32px, 8vw, 48px);
+      }
+
+      .booking-sub {
+        font-size: 16px;
+      }
+
+      .booking-option {
+        padding: 20px 20px;
+      }
+
+      .bo-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+      }
+
+      .form-card {
+        padding: 32px 24px;
+      }
+
+      footer {
+        padding: 56px 0 32px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .sticky-cta {
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .sticky-wa {
+        padding: 12px 18px;
+        font-size: 13px;
+      }
+
+      .sticky-call {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+      }
+
+      .container {
+        padding: 0 24px;
+      }
+
+      .container-wide {
+        padding: 0 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-headline {
+        font-size: clamp(36px, 10vw, 56px);
+      }
+
+      .about-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .about-stat {
+        padding: 20px 16px;
+      }
+
+      .stat-num {
+        font-size: 36px;
+      }
+
+      .conditions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .condition-card {
+        padding: 24px 20px;
+      }
+
+      .journey-track {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .step-num {
+        font-size: 10px;
+      }
+
+      .step-label {
+        font-size: 13px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      .container-wide {
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .trust-chip {
+        flex: 1;
+        min-width: 100%;
+      }
+
+      .sticky-wa span {
+        display: none;
+      }
+
+      .sticky-wa {
+        padding: 14px;
+        border-radius: 50%;
+      }
+    }
+  </style>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
@@ -1038,701 +2150,774 @@
 
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-logo">Elite<span>Physio</span></div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#conditions">Conditions</a>
-    <a href="#testimonials">Patients</a>
-    <a href="#booking" class="nav-cta">Book Now</a>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">Elite<span>Physio</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#conditions">Conditions</a>
+      <a href="#testimonials">Patients</a>
+      <a href="#booking" class="nav-cta">Book Now</a>
+    </div>
+    <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#services" onclick="closeMobileMenu()">Services</a>
+    <a href="#conditions" onclick="closeMobileMenu()">Conditions</a>
+    <a href="#testimonials" onclick="closeMobileMenu()">Patients</a>
+    <a href="#booking" class="nav-cta" onclick="closeMobileMenu()">Book Now</a>
   </div>
-</nav>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-bg-shape"></div>
-  <div class="hero-bg-shape2"></div>
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-eyebrow" id="hero-eyebrow">
-        <span class="dot"></span>
-        Available in Pune &amp; Online
-      </div>
-      <h1 class="hero-headline" id="hero-headline">
-        Recovery<br>Shouldn't<br><span class="teal-word">Require</span><br>a Journey.
-      </h1>
-      <p class="hero-sub" id="hero-sub">
-        Professional physiotherapy delivered at home and online — guided by Dr. Vaishnavi Kadam, BPT.
-      </p>
-      <div class="hero-actions" id="hero-actions">
-        <a href="#booking" class="btn-primary">Book a Session →</a>
-        <a href="https://wa.me/91XXXXXXXXXX" class="btn-secondary">
-          <span>💬</span> WhatsApp Us
-        </a>
-      </div>
-      <div class="hero-trust-row" id="hero-trust">
-        <div class="trust-chip">
-          <div class="icon-wrap">🏥</div>
-          BPT Qualified
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-bg-shape2"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow" id="hero-eyebrow">
+          <span class="dot"></span>
+          Available in Pune &amp; Online
         </div>
-        <div class="trust-chip">
-          <div class="icon-wrap">✅</div>
-          50+ Patients
-        </div>
-        <div class="trust-chip">
-          <div class="icon-wrap">🏠</div>
-          Home Visits
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-photo-col" id="hero-photo">
-      <div class="hero-photo-frame">
-        <div class="hero-photo-placeholder">
-          <div class="hero-avatar-circle">VK</div>
-          <div class="hero-photo-name">Dr. Vaishnavi Kadam</div>
-          <div class="hero-photo-title">BPT · Physiotherapist · Pune</div>
-        </div>
-      </div>
-      <div class="hero-metric-float float-1">
-        <div class="float-num">50+</div>
-        <div class="float-label">Patients Treated</div>
-      </div>
-      <div class="hero-metric-float float-2">
-        <div class="float-num">2 Yrs</div>
-        <div class="float-label">Clinical Experience</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-inner">
-      <div class="reveal-left">
-        <div class="section-label" style="color:var(--teal-300)">The Story</div>
-        <h2 class="about-headline">Healing that comes to you</h2>
-        <p class="about-sub">Elite Physio Care was founded on a simple belief: recovery shouldn't depend on your ability to travel. Every patient deserves clinical-grade physiotherapy in the comfort of their own home.</p>
-        <div class="about-stats">
-          <div class="about-stat">
-            <div class="stat-num" data-count="50">0</div>
-            <div class="stat-label">Patients treated</div>
-          </div>
-          <div class="about-stat">
-            <div class="stat-num" data-count="2">0</div>
-            <div class="stat-label">Years experience</div>
-          </div>
-          <div class="about-stat">
-            <div class="stat-num" data-count="8">0</div>
-            <div class="stat-label">Conditions treated</div>
-          </div>
-          <div class="about-stat">
-            <div class="stat-num" data-count="100">0</div>
-            <div class="stat-label">% personalized care</div>
-          </div>
-        </div>
-      </div>
-      <div class="reveal-right">
-        <div class="section-label" style="color:var(--teal-300)">Credentials</div>
-        <div class="about-timeline">
-          <div class="timeline-item">
-            <div class="tl-dot">🎓</div>
-            <div class="tl-content">
-              <div class="tl-year">Qualification</div>
-              <div class="tl-title">BPT — Bachelor of Physiotherapy</div>
-              <div class="tl-desc">Pune University</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="tl-dot">🏫</div>
-            <div class="tl-content">
-              <div class="tl-year">Institution</div>
-              <div class="tl-title">Dhole Patil College of Physiotherapy</div>
-              <div class="tl-desc">Rigorous clinical training under senior physiotherapists</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="tl-dot">💼</div>
-            <div class="tl-content">
-              <div class="tl-year">Practice</div>
-              <div class="tl-title">2 Years Clinical Experience</div>
-              <div class="tl-desc">Specializing in orthopaedic, neurological, and sports rehabilitation</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="tl-dot">🏠</div>
-            <div class="tl-content">
-              <div class="tl-year">Today</div>
-              <div class="tl-title">Elite Physio Care, Pune</div>
-              <div class="tl-desc">Home visits and online consultations across Pune and surrounding areas</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="container">
-    <div class="services-header reveal">
-      <div class="section-label">Services &amp; Pricing</div>
-      <h2 class="services-headline">Every treatment,<br>delivered your way</h2>
-    </div>
-    <div class="services-panels">
-
-      <!-- Panel 1: Online -->
-      <div class="service-panel panel-online reveal">
-        <div class="service-panel-inner">
-          <div class="sp-content">
-            <div>
-              <div class="sp-num">01</div>
-              <div class="sp-tag">Virtual Care</div>
-              <div class="sp-title">Online Consultation</div>
-              <p class="sp-desc">Expert assessment and personalized exercise programs delivered via video call — no commute required.</p>
-              <ul class="sp-benefits">
-                <li>Video-based movement analysis</li>
-                <li>Customized home exercise program</li>
-                <li>Posture and ergonomics guidance</li>
-                <li>Follow-up support via WhatsApp</li>
-              </ul>
-            </div>
-            <div>
-              <div class="sp-price-row">
-                <div class="sp-price">₹399</div>
-                <div class="sp-price-label">per session</div>
-              </div>
-              <a href="#booking" class="sp-btn">Book Online Session →</a>
-            </div>
-          </div>
-          <div class="sp-visual">
-            <div class="sp-visual-bg"></div>
-            <div class="visual-pattern"></div>
-            <div class="visual-icon-large" style="color:var(--teal-600)">💻</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 2: Home Visit -->
-      <div class="service-panel panel-home reveal">
-        <div class="service-panel-inner" style="direction: rtl;">
-          <div class="sp-content" style="direction: ltr;">
-            <div>
-              <div class="sp-num">02</div>
-              <div class="sp-tag">At Your Door</div>
-              <div class="sp-title">Home Visit Physiotherapy</div>
-              <p class="sp-desc">Full clinical assessment and hands-on treatment delivered in the comfort of your home — clinical care without the clinic.</p>
-              <ul class="sp-benefits">
-                <li>Complete physical assessment</li>
-                <li>Manual therapy &amp; mobilization</li>
-                <li>Therapeutic exercises guidance</li>
-                <li>Post-treatment care instructions</li>
-              </ul>
-            </div>
-            <div>
-              <div class="sp-price-row">
-                <div class="sp-price">₹599</div>
-                <div class="sp-price-label">per visit</div>
-              </div>
-              <a href="#booking" class="sp-btn">Book Home Visit →</a>
-            </div>
-          </div>
-          <div class="sp-visual" style="direction: ltr;">
-            <div class="sp-visual-bg"></div>
-            <div class="visual-pattern"></div>
-            <div class="visual-icon-large">🏠</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 3: Recovery Program (Recommended) -->
-      <div class="service-panel panel-program reveal">
-        <div class="service-panel-inner">
-          <div class="sp-content">
-            <div>
-              <div class="sp-num">03</div>
-              <div class="sp-tag">Best Value</div>
-              <div class="sp-title">Monthly Recovery Program</div>
-              <p class="sp-desc">A structured 12-session program designed for lasting recovery — tracking your progress from first assessment to full wellness.</p>
-              <ul class="sp-benefits">
-                <li>12 sessions (home + online mix)</li>
-                <li>Full progress tracking &amp; reporting</li>
-                <li>Monthly reassessment &amp; adjustment</li>
-                <li>Priority WhatsApp support</li>
-                <li>Long-term wellness planning</li>
-              </ul>
-            </div>
-            <div>
-              <div class="sp-price-row">
-                <div class="sp-price">₹6,099</div>
-                <div class="sp-price-label">for 12 sessions</div>
-              </div>
-              <a href="#booking" class="sp-btn">Start Recovery Program →</a>
-            </div>
-          </div>
-          <div class="sp-visual">
-            <div class="sp-visual-bg"></div>
-            <div class="visual-pattern"></div>
-            <div class="sp-recommend-badge">⭐ Recommended</div>
-            <div class="visual-icon-large">🔄</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONDITIONS -->
-<section class="conditions" id="conditions">
-  <div class="container">
-    <div class="conditions-header reveal">
-      <div class="section-label">Conditions Treated</div>
-      <h2 style="font-family:'Cabinet Grotesk',sans-serif;font-size:clamp(36px,4vw,56px);font-weight:800;letter-spacing:-0.04em;color:var(--stone-900);margin-bottom:16px;">
-        We treat pain at<br>its source
-      </h2>
-      <p style="font-size:17px;color:var(--muted);max-width:520px;">Evidence-based treatment protocols for a wide range of musculoskeletal and neurological conditions.</p>
-    </div>
-    <div class="conditions-grid">
-      <div class="condition-card reveal" style="transition-delay:0.05s">
-        <div class="condition-icon">🔵</div>
-        <div class="condition-name">Back Pain</div>
-        <div class="condition-desc">Lumbar support, core strengthening, and postural correction for lasting relief.</div>
-      </div>
-      <div class="condition-card reveal" style="transition-delay:0.1s">
-        <div class="condition-icon">🟢</div>
-        <div class="condition-name">Neck Pain</div>
-        <div class="condition-desc">Cervical mobilization, ergonomics, and targeted muscle rehabilitation.</div>
-      </div>
-      <div class="condition-card reveal" style="transition-delay:0.15s">
-        <div class="condition-icon">🩵</div>
-        <div class="condition-name">Knee Pain</div>
-        <div class="condition-desc">Strengthening and movement re-education for the knee joint and surrounding muscles.</div>
-      </div>
-      <div class="condition-card reveal" style="transition-delay:0.2s">
-        <div class="condition-icon">🔴</div>
-        <div class="condition-name">Arthritis</div>
-        <div class="condition-desc">Pain management, joint mobility, and adaptive exercise programs tailored for all ages.</div>
-      </div>
-      <div class="condition-card reveal" style="transition-delay:0.25s">
-        <div class="condition-icon">🟤</div>
-        <div class="condition-name">Frozen Shoulder</div>
-        <div class="condition-desc">Restoring full shoulder range of motion through progressive capsular stretching.</div>
-      </div>
-      <div class="condition-card reveal" style="transition-delay:0.3s">
-        <div class="condition-icon">⚡</div>
-        <div class="condition-name">Sports Injuries</div>
-        <div class="condition-desc">Injury rehabilitation and return-to-sport programs for athletes of all levels.</div>
-      </div>
-      <div class="condition-card reveal" style="transition-delay:0.35s">
-        <div class="condition-icon">🔶</div>
-        <div class="condition-name">Slip Disc</div>
-        <div class="condition-desc">McKenzie method and neural mobilization techniques for herniated disc recovery.</div>
-      </div>
-      <div class="condition-card reveal" style="transition-delay:0.4s">
-        <div class="condition-icon">💜</div>
-        <div class="condition-name">Stroke Rehabilitation</div>
-        <div class="condition-desc">Neuro-rehabilitation programs to restore mobility, strength, and independence post-stroke.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY PATIENTS STAY -->
-<section class="trust" id="trust">
-  <div class="container">
-    <div class="trust-inner">
-      <div class="reveal-left">
-        <div class="section-label">Outcomes Over Promises</div>
-        <h2 class="trust-headline">Why patients<br>stay with us</h2>
-        <p class="trust-sub">We don't just treat symptoms — we build recovery plans that address the root cause and keep you well long after treatment ends.</p>
-        <div style="display:flex;align-items:center;gap:12px;padding:20px 24px;background:var(--teal-50);border:1px solid var(--teal-100);border-radius:var(--radius-md);">
-          <div style="font-size:28px;">💬</div>
-          <div>
-            <div style="font-size:15px;font-weight:500;color:var(--teal-800);">"I can walk without pain for the first time in 2 years."</div>
-            <div style="font-size:13px;color:var(--muted);margin-top:3px;">— Patient, Knee rehabilitation program</div>
-          </div>
-        </div>
-      </div>
-      <div class="trust-features reveal-right">
-        <div class="trust-feature">
-          <div class="tf-icon">🎯</div>
-          <div>
-            <div class="tf-title">Personalized Care</div>
-            <div class="tf-desc">No two bodies are the same. Every treatment plan is built around your specific condition, lifestyle, and recovery goals.</div>
-          </div>
-        </div>
-        <div class="trust-feature">
-          <div class="tf-icon">🕐</div>
-          <div>
-            <div class="tf-title">Flexible Scheduling</div>
-            <div class="tf-desc">Morning, evening, or weekend slots — we fit around your life, not the other way around.</div>
-          </div>
-        </div>
-        <div class="trust-feature">
-          <div class="tf-icon">💰</div>
-          <div>
-            <div class="tf-title">Affordable Treatment</div>
-            <div class="tf-desc">Premium clinical care at transparent pricing — no hidden fees, no surprise charges.</div>
-          </div>
-        </div>
-        <div class="trust-feature">
-          <div class="tf-icon">🏡</div>
-          <div>
-            <div class="tf-title">Home Convenience</div>
-            <div class="tf-desc">Recover faster in a familiar environment, without the stress of travel or waiting rooms.</div>
-          </div>
-        </div>
-        <div class="trust-feature">
-          <div class="tf-icon">📈</div>
-          <div>
-            <div class="tf-title">Long-Term Recovery</div>
-            <div class="tf-desc">We focus on rebuilding functional movement patterns that prevent re-injury and sustain wellness.</div>
-          </div>
-        </div>
-        <div class="trust-feature">
-          <div class="tf-icon">👩‍⚕️</div>
-          <div>
-            <div class="tf-title">Professional Guidance</div>
-            <div class="tf-desc">Direct access to a qualified physiotherapist at every step — no assistants, no hand-offs.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PATIENT JOURNEY -->
-<section class="journey" id="journey">
-  <div class="container">
-    <div class="journey-header reveal">
-      <div class="section-label" style="color:var(--teal-300)">The Process</div>
-      <h2 class="journey-headline">Your path to recovery</h2>
-      <p class="journey-sub">Six clear steps from booking to lasting wellness — with expert guidance at each stage.</p>
-    </div>
-    <div class="journey-track" id="journeyTrack">
-      <div class="journey-progress-line" id="progressLine"></div>
-      <div class="journey-step reveal" data-step="1">
-        <div class="step-dot">📅</div>
-        <div class="step-num">Step 01</div>
-        <div class="step-label">Book</div>
-      </div>
-      <div class="journey-step reveal" data-step="2" style="transition-delay:0.1s">
-        <div class="step-dot">🔍</div>
-        <div class="step-num">Step 02</div>
-        <div class="step-label">Assessment</div>
-      </div>
-      <div class="journey-step reveal" data-step="3" style="transition-delay:0.2s">
-        <div class="step-dot">📋</div>
-        <div class="step-num">Step 03</div>
-        <div class="step-label">Personalized Plan</div>
-      </div>
-      <div class="journey-step reveal" data-step="4" style="transition-delay:0.3s">
-        <div class="step-dot">💪</div>
-        <div class="step-num">Step 04</div>
-        <div class="step-label">Treatment</div>
-      </div>
-      <div class="journey-step reveal" data-step="5" style="transition-delay:0.4s">
-        <div class="step-dot">🌱</div>
-        <div class="step-num">Step 05</div>
-        <div class="step-label">Recovery</div>
-      </div>
-      <div class="journey-step reveal" data-step="6" style="transition-delay:0.5s">
-        <div class="step-dot">✨</div>
-        <div class="step-num">Step 06</div>
-        <div class="step-label">Long-Term Wellness</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
-  <div class="container">
-    <div class="testimonials-header reveal">
-      <div class="section-label">Patient Stories</div>
-      <h2 class="testimonials-headline">Recovery, in their<br>own words</h2>
-    </div>
-    <div class="testimonials-layout">
-      <div class="testi-main reveal-left">
-        <div class="testi-quote">
-          After three months with Dr. Vaishnavi, I've completely recovered from a frozen shoulder that had limited me for two years. The home visits made it so easy to stay consistent with treatment.
-        </div>
-        <div class="testi-author">
-          <div class="author-avatar">RP</div>
-          <div>
-            <div class="author-name">Rajesh Patil</div>
-            <div class="author-detail">Frozen Shoulder Recovery · Pune</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-secondary reveal-right">
-        <div class="testi-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-        </div>
-        <div class="testi-quote">
-          The online consultation was surprisingly thorough. She picked up on my posture issues immediately and gave me exercises that actually worked within two weeks.
-        </div>
-        <div class="testi-author">
-          <div class="author-avatar" style="background:var(--sage-400);color:#fff;">SM</div>
-          <div>
-            <div class="author-name">Sneha Mehta</div>
-            <div class="author-detail">Neck Pain · Online Consultation</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-highlight reveal-right" style="transition-delay:0.15s">
-        <div class="testi-quote">
-          My mother had a stroke and Dr. Vaishnavi's rehabilitation program has been life-changing. She's now walking independently — something we weren't sure would happen.
-        </div>
-        <div class="testi-author">
-          <div class="author-avatar" style="background:rgba(255,255,255,0.25);color:#fff;">AK</div>
-          <div>
-            <div class="author-name">Anil Kulkarni</div>
-            <div class="author-detail">Stroke Rehabilitation · Recovery Program</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOKING -->
-<section class="booking" id="booking">
-  <div class="container">
-    <div class="booking-inner">
-      <div class="reveal-left">
-        <div class="section-label">Get Started</div>
-        <h2 class="booking-headline">Let's begin your<br>recovery today</h2>
-        <p class="booking-sub">Book your first session in under 2 minutes. Choose how you'd like to connect — online, at home, or on the phone.</p>
-        <div class="booking-options">
-          <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20book%20a%20physiotherapy%20session" class="booking-option">
-            <div class="bo-icon" style="background:#e8fdf4;font-size:24px;">💬</div>
-            <div>
-              <div class="bo-title">WhatsApp Us</div>
-              <div class="bo-desc">Quick response within 1 hour</div>
-            </div>
-            <div class="bo-arrow">→</div>
-          </a>
-          <a href="tel:+91XXXXXXXXXX" class="booking-option">
-            <div class="bo-icon" style="background:var(--teal-50);font-size:24px;">📞</div>
-            <div>
-              <div class="bo-title">Call Dr. Vaishnavi</div>
-              <div class="bo-desc">Mon–Sat, 9am–7pm</div>
-            </div>
-            <div class="bo-arrow">→</div>
+        <h1 class="hero-headline" id="hero-headline">
+          Recovery<br>Shouldn't<br><span class="teal-word">Require</span><br>a Journey.
+        </h1>
+        <p class="hero-sub" id="hero-sub">
+          Professional physiotherapy delivered at home and online — guided by Dr. Vaishnavi Kadam, BPT.
+        </p>
+        <div class="hero-actions" id="hero-actions">
+          <a href="#booking" class="btn-primary">Book a Session →</a>
+          <a href="https://wa.me/91XXXXXXXXXX" class="btn-secondary">
+            <span>💬</span> WhatsApp Us
           </a>
         </div>
+        <div class="hero-trust-row" id="hero-trust">
+          <div class="trust-chip">
+            <div class="icon-wrap">🏥</div>
+            BPT Qualified
+          </div>
+          <div class="trust-chip">
+            <div class="icon-wrap">✅</div>
+            50+ Patients
+          </div>
+          <div class="trust-chip">
+            <div class="icon-wrap">🏠</div>
+            Home Visits
+          </div>
+        </div>
       </div>
-      <div class="form-card reveal-right">
-        <div class="form-title">Book a Session</div>
-        <div class="form-subtitle">We'll confirm your appointment within 24 hours</div>
-        <form onsubmit="handleForm(event)">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Your name" required>
+
+      <div class="hero-photo-col" id="hero-photo">
+        <div class="hero-photo-frame">
+          <div class="hero-photo-placeholder">
+            <div class="hero-avatar-circle">VK</div>
+            <div class="hero-photo-name">Dr. Vaishnavi Kadam</div>
+            <div class="hero-photo-title">BPT · Physiotherapist · Pune</div>
           </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
-          </div>
-          <div class="form-group">
-            <label for="condition">Your Condition</label>
-            <input type="text" id="condition" placeholder="e.g. Back pain, Knee injury...">
-          </div>
-          <div class="form-group">
-            <label for="consult">Preferred Consultation</label>
-            <select id="consult">
-              <option value="">Select type</option>
-              <option>Online Consultation — ₹399</option>
-              <option>Home Visit — ₹599</option>
-              <option>Monthly Recovery Program — ₹6,099</option>
-            </select>
-          </div>
-          <button type="submit" class="form-submit">Book My Session →</button>
-        </form>
+        </div>
+        <div class="hero-metric-float float-1">
+          <div class="float-num">50+</div>
+          <div class="float-label">Patients Treated</div>
+        </div>
+        <div class="hero-metric-float float-2">
+          <div class="float-num">2 Yrs</div>
+          <div class="float-label">Clinical Experience</div>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="reveal-left">
+          <div class="section-label" style="color:var(--teal-300)">The Story</div>
+          <h2 class="about-headline">Healing that comes to you</h2>
+          <p class="about-sub">Elite Physio Care was founded on a simple belief: recovery shouldn't depend on your
+            ability to travel. Every patient deserves clinical-grade physiotherapy in the comfort of their own home.</p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="stat-num" data-count="50">0</div>
+              <div class="stat-label">Patients treated</div>
+            </div>
+            <div class="about-stat">
+              <div class="stat-num" data-count="2">0</div>
+              <div class="stat-label">Years experience</div>
+            </div>
+            <div class="about-stat">
+              <div class="stat-num" data-count="8">0</div>
+              <div class="stat-label">Conditions treated</div>
+            </div>
+            <div class="about-stat">
+              <div class="stat-num" data-count="100">0</div>
+              <div class="stat-label">% personalized care</div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="section-label" style="color:var(--teal-300)">Credentials</div>
+          <div class="about-timeline">
+            <div class="timeline-item">
+              <div class="tl-dot">🎓</div>
+              <div class="tl-content">
+                <div class="tl-year">Qualification</div>
+                <div class="tl-title">BPT — Bachelor of Physiotherapy</div>
+                <div class="tl-desc">Pune University</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot">🏫</div>
+              <div class="tl-content">
+                <div class="tl-year">Institution</div>
+                <div class="tl-title">Dhole Patil College of Physiotherapy</div>
+                <div class="tl-desc">Rigorous clinical training under senior physiotherapists</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot">💼</div>
+              <div class="tl-content">
+                <div class="tl-year">Practice</div>
+                <div class="tl-title">2 Years Clinical Experience</div>
+                <div class="tl-desc">Specializing in orthopaedic, neurological, and sports rehabilitation</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot">🏠</div>
+              <div class="tl-content">
+                <div class="tl-year">Today</div>
+                <div class="tl-title">Elite Physio Care, Pune</div>
+                <div class="tl-desc">Home visits and online consultations across Pune and surrounding areas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <div class="section-label">Services &amp; Pricing</div>
+        <h2 class="services-headline">Every treatment,<br>delivered your way</h2>
+      </div>
+      <div class="services-panels">
+
+        <!-- Panel 1: Online -->
+        <div class="service-panel panel-online reveal">
+          <div class="service-panel-inner">
+            <div class="sp-content">
+              <div>
+                <div class="sp-num">01</div>
+                <div class="sp-tag">Virtual Care</div>
+                <div class="sp-title">Online Consultation</div>
+                <p class="sp-desc">Expert assessment and personalized exercise programs delivered via video call — no
+                  commute required.</p>
+                <ul class="sp-benefits">
+                  <li>Video-based movement analysis</li>
+                  <li>Customized home exercise program</li>
+                  <li>Posture and ergonomics guidance</li>
+                  <li>Follow-up support via WhatsApp</li>
+                </ul>
+              </div>
+              <div>
+                <div class="sp-price-row">
+                  <div class="sp-price">₹399</div>
+                  <div class="sp-price-label">per session</div>
+                </div>
+                <a href="#booking" class="sp-btn">Book Online Session →</a>
+              </div>
+            </div>
+            <div class="sp-visual">
+              <div class="sp-visual-bg"></div>
+              <div class="visual-pattern"></div>
+              <div class="visual-icon-large" style="color:var(--teal-600)">💻</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Home Visit -->
+        <div class="service-panel panel-home reveal">
+          <div class="service-panel-inner" style="direction: rtl;">
+            <div class="sp-content" style="direction: ltr;">
+              <div>
+                <div class="sp-num">02</div>
+                <div class="sp-tag">At Your Door</div>
+                <div class="sp-title">Home Visit Physiotherapy</div>
+                <p class="sp-desc">Full clinical assessment and hands-on treatment delivered in the comfort of your home
+                  — clinical care without the clinic.</p>
+                <ul class="sp-benefits">
+                  <li>Complete physical assessment</li>
+                  <li>Manual therapy &amp; mobilization</li>
+                  <li>Therapeutic exercises guidance</li>
+                  <li>Post-treatment care instructions</li>
+                </ul>
+              </div>
+              <div>
+                <div class="sp-price-row">
+                  <div class="sp-price">₹599</div>
+                  <div class="sp-price-label">per visit</div>
+                </div>
+                <a href="#booking" class="sp-btn">Book Home Visit →</a>
+              </div>
+            </div>
+            <div class="sp-visual" style="direction: ltr;">
+              <div class="sp-visual-bg"></div>
+              <div class="visual-pattern"></div>
+              <div class="visual-icon-large">🏠</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Recovery Program (Recommended) -->
+        <div class="service-panel panel-program reveal">
+          <div class="service-panel-inner">
+            <div class="sp-content">
+              <div>
+                <div class="sp-num">03</div>
+                <div class="sp-tag">Best Value</div>
+                <div class="sp-title">Monthly Recovery Program</div>
+                <p class="sp-desc">A structured 12-session program designed for lasting recovery — tracking your
+                  progress from first assessment to full wellness.</p>
+                <ul class="sp-benefits">
+                  <li>12 sessions (home + online mix)</li>
+                  <li>Full progress tracking &amp; reporting</li>
+                  <li>Monthly reassessment &amp; adjustment</li>
+                  <li>Priority WhatsApp support</li>
+                  <li>Long-term wellness planning</li>
+                </ul>
+              </div>
+              <div>
+                <div class="sp-price-row">
+                  <div class="sp-price">₹6,099</div>
+                  <div class="sp-price-label">for 12 sessions</div>
+                </div>
+                <a href="#booking" class="sp-btn">Start Recovery Program →</a>
+              </div>
+            </div>
+            <div class="sp-visual">
+              <div class="sp-visual-bg"></div>
+              <div class="visual-pattern"></div>
+              <div class="sp-recommend-badge">⭐ Recommended</div>
+              <div class="visual-icon-large">🔄</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS -->
+  <section class="conditions" id="conditions">
+    <div class="container">
+      <div class="conditions-header reveal">
+        <div class="section-label">Conditions Treated</div>
+        <h2
+          style="font-family:'Cabinet Grotesk',sans-serif;font-size:clamp(36px,4vw,56px);font-weight:800;letter-spacing:-0.04em;color:var(--stone-900);margin-bottom:16px;">
+          We treat pain at<br>its source
+        </h2>
+        <p style="font-size:17px;color:var(--muted);max-width:520px;">Evidence-based treatment protocols for a wide
+          range of musculoskeletal and neurological conditions.</p>
+      </div>
+      <div class="conditions-grid">
+        <div class="condition-card reveal" style="transition-delay:0.05s">
+          <div class="condition-icon">🔵</div>
+          <div class="condition-name">Back Pain</div>
+          <div class="condition-desc">Lumbar support, core strengthening, and postural correction for lasting relief.
+          </div>
+        </div>
+        <div class="condition-card reveal" style="transition-delay:0.1s">
+          <div class="condition-icon">🟢</div>
+          <div class="condition-name">Neck Pain</div>
+          <div class="condition-desc">Cervical mobilization, ergonomics, and targeted muscle rehabilitation.</div>
+        </div>
+        <div class="condition-card reveal" style="transition-delay:0.15s">
+          <div class="condition-icon">🩵</div>
+          <div class="condition-name">Knee Pain</div>
+          <div class="condition-desc">Strengthening and movement re-education for the knee joint and surrounding
+            muscles.</div>
+        </div>
+        <div class="condition-card reveal" style="transition-delay:0.2s">
+          <div class="condition-icon">🔴</div>
+          <div class="condition-name">Arthritis</div>
+          <div class="condition-desc">Pain management, joint mobility, and adaptive exercise programs tailored for all
+            ages.</div>
+        </div>
+        <div class="condition-card reveal" style="transition-delay:0.25s">
+          <div class="condition-icon">🟤</div>
+          <div class="condition-name">Frozen Shoulder</div>
+          <div class="condition-desc">Restoring full shoulder range of motion through progressive capsular stretching.
+          </div>
+        </div>
+        <div class="condition-card reveal" style="transition-delay:0.3s">
+          <div class="condition-icon">⚡</div>
+          <div class="condition-name">Sports Injuries</div>
+          <div class="condition-desc">Injury rehabilitation and return-to-sport programs for athletes of all levels.
+          </div>
+        </div>
+        <div class="condition-card reveal" style="transition-delay:0.35s">
+          <div class="condition-icon">🔶</div>
+          <div class="condition-name">Slip Disc</div>
+          <div class="condition-desc">McKenzie method and neural mobilization techniques for herniated disc recovery.
+          </div>
+        </div>
+        <div class="condition-card reveal" style="transition-delay:0.4s">
+          <div class="condition-icon">💜</div>
+          <div class="condition-name">Stroke Rehabilitation</div>
+          <div class="condition-desc">Neuro-rehabilitation programs to restore mobility, strength, and independence
+            post-stroke.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PATIENTS STAY -->
+  <section class="trust" id="trust">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="reveal-left">
+          <div class="section-label">Outcomes Over Promises</div>
+          <h2 class="trust-headline">Why patients<br>stay with us</h2>
+          <p class="trust-sub">We don't just treat symptoms — we build recovery plans that address the root cause and
+            keep you well long after treatment ends.</p>
+          <div
+            style="display:flex;align-items:center;gap:12px;padding:20px 24px;background:var(--teal-50);border:1px solid var(--teal-100);border-radius:var(--radius-md);">
+            <div style="font-size:28px;">💬</div>
+            <div>
+              <div style="font-size:15px;font-weight:500;color:var(--teal-800);">"I can walk without pain for the first
+                time in 2 years."</div>
+              <div style="font-size:13px;color:var(--muted);margin-top:3px;">— Patient, Knee rehabilitation program
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trust-features reveal-right">
+          <div class="trust-feature">
+            <div class="tf-icon">🎯</div>
+            <div>
+              <div class="tf-title">Personalized Care</div>
+              <div class="tf-desc">No two bodies are the same. Every treatment plan is built around your specific
+                condition, lifestyle, and recovery goals.</div>
+            </div>
+          </div>
+          <div class="trust-feature">
+            <div class="tf-icon">🕐</div>
+            <div>
+              <div class="tf-title">Flexible Scheduling</div>
+              <div class="tf-desc">Morning, evening, or weekend slots — we fit around your life, not the other way
+                around.</div>
+            </div>
+          </div>
+          <div class="trust-feature">
+            <div class="tf-icon">💰</div>
+            <div>
+              <div class="tf-title">Affordable Treatment</div>
+              <div class="tf-desc">Premium clinical care at transparent pricing — no hidden fees, no surprise charges.
+              </div>
+            </div>
+          </div>
+          <div class="trust-feature">
+            <div class="tf-icon">🏡</div>
+            <div>
+              <div class="tf-title">Home Convenience</div>
+              <div class="tf-desc">Recover faster in a familiar environment, without the stress of travel or waiting
+                rooms.</div>
+            </div>
+          </div>
+          <div class="trust-feature">
+            <div class="tf-icon">📈</div>
+            <div>
+              <div class="tf-title">Long-Term Recovery</div>
+              <div class="tf-desc">We focus on rebuilding functional movement patterns that prevent re-injury and
+                sustain wellness.</div>
+            </div>
+          </div>
+          <div class="trust-feature">
+            <div class="tf-icon">👩‍⚕️</div>
+            <div>
+              <div class="tf-title">Professional Guidance</div>
+              <div class="tf-desc">Direct access to a qualified physiotherapist at every step — no assistants, no
+                hand-offs.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATIENT JOURNEY -->
+  <section class="journey" id="journey">
+    <div class="container">
+      <div class="journey-header reveal">
+        <div class="section-label" style="color:var(--teal-300)">The Process</div>
+        <h2 class="journey-headline">Your path to recovery</h2>
+        <p class="journey-sub">Six clear steps from booking to lasting wellness — with expert guidance at each stage.
+        </p>
+      </div>
+      <div class="journey-track" id="journeyTrack">
+        <div class="journey-progress-line" id="progressLine"></div>
+        <div class="journey-step reveal" data-step="1">
+          <div class="step-dot">📅</div>
+          <div class="step-num">Step 01</div>
+          <div class="step-label">Book</div>
+        </div>
+        <div class="journey-step reveal" data-step="2" style="transition-delay:0.1s">
+          <div class="step-dot">🔍</div>
+          <div class="step-num">Step 02</div>
+          <div class="step-label">Assessment</div>
+        </div>
+        <div class="journey-step reveal" data-step="3" style="transition-delay:0.2s">
+          <div class="step-dot">📋</div>
+          <div class="step-num">Step 03</div>
+          <div class="step-label">Personalized Plan</div>
+        </div>
+        <div class="journey-step reveal" data-step="4" style="transition-delay:0.3s">
+          <div class="step-dot">💪</div>
+          <div class="step-num">Step 04</div>
+          <div class="step-label">Treatment</div>
+        </div>
+        <div class="journey-step reveal" data-step="5" style="transition-delay:0.4s">
+          <div class="step-dot">🌱</div>
+          <div class="step-num">Step 05</div>
+          <div class="step-label">Recovery</div>
+        </div>
+        <div class="journey-step reveal" data-step="6" style="transition-delay:0.5s">
+          <div class="step-dot">✨</div>
+          <div class="step-num">Step 06</div>
+          <div class="step-label">Long-Term Wellness</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <div class="section-label">Patient Stories</div>
+        <h2 class="testimonials-headline">Recovery, in their<br>own words</h2>
+      </div>
+      <div class="testimonials-layout">
+        <div class="testi-main reveal-left">
+          <div class="testi-quote">
+            After three months with Dr. Vaishnavi, I've completely recovered from a frozen shoulder that had limited me
+            for two years. The home visits made it so easy to stay consistent with treatment.
+          </div>
+          <div class="testi-author">
+            <div class="author-avatar">RP</div>
+            <div>
+              <div class="author-name">Rajesh Patil</div>
+              <div class="author-detail">Frozen Shoulder Recovery · Pune</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-secondary reveal-right">
+          <div class="testi-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+              class="star">★</span><span class="star">★</span>
+          </div>
+          <div class="testi-quote">
+            The online consultation was surprisingly thorough. She picked up on my posture issues immediately and gave
+            me exercises that actually worked within two weeks.
+          </div>
+          <div class="testi-author">
+            <div class="author-avatar" style="background:var(--sage-400);color:#fff;">SM</div>
+            <div>
+              <div class="author-name">Sneha Mehta</div>
+              <div class="author-detail">Neck Pain · Online Consultation</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-highlight reveal-right" style="transition-delay:0.15s">
+          <div class="testi-quote">
+            My mother had a stroke and Dr. Vaishnavi's rehabilitation program has been life-changing. She's now walking
+            independently — something we weren't sure would happen.
+          </div>
+          <div class="testi-author">
+            <div class="author-avatar" style="background:rgba(255,255,255,0.25);color:#fff;">AK</div>
+            <div>
+              <div class="author-name">Anil Kulkarni</div>
+              <div class="author-detail">Stroke Rehabilitation · Recovery Program</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking-inner">
+        <div class="reveal-left">
+          <div class="section-label">Get Started</div>
+          <h2 class="booking-headline">Let's begin your<br>recovery today</h2>
+          <p class="booking-sub">Book your first session in under 2 minutes. Choose how you'd like to connect — online,
+            at home, or on the phone.</p>
+          <div class="booking-options">
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20book%20a%20physiotherapy%20session"
+              class="booking-option">
+              <div class="bo-icon" style="background:#e8fdf4;font-size:24px;">💬</div>
+              <div>
+                <div class="bo-title">WhatsApp Us</div>
+                <div class="bo-desc">Quick response within 1 hour</div>
+              </div>
+              <div class="bo-arrow">→</div>
+            </a>
+            <a href="tel:+91XXXXXXXXXX" class="booking-option">
+              <div class="bo-icon" style="background:var(--teal-50);font-size:24px;">📞</div>
+              <div>
+                <div class="bo-title">Call Dr. Vaishnavi</div>
+                <div class="bo-desc">Mon–Sat, 9am–7pm</div>
+              </div>
+              <div class="bo-arrow">→</div>
+            </a>
+          </div>
+        </div>
+        <div class="form-card reveal-right">
+          <div class="form-title">Book a Session</div>
+          <div class="form-subtitle">We'll confirm your appointment within 24 hours</div>
+          <form onsubmit="handleForm(event)">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="form-group">
+              <label for="condition">Your Condition</label>
+              <input type="text" id="condition" placeholder="e.g. Back pain, Knee injury...">
+            </div>
+            <div class="form-group">
+              <label for="consult">Preferred Consultation</label>
+              <select id="consult">
+                <option value="">Select type</option>
+                <option>Online Consultation — ₹399</option>
+                <option>Home Visit — ₹599</option>
+                <option>Monthly Recovery Program — ₹6,099</option>
+              </select>
+            </div>
+            <button type="submit" class="form-submit">Book My Session →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand-name">Elite<span>Physio</span> Care</div>
+          <div class="footer-tagline">Professional physiotherapy at home and online — Pune, Maharashtra.</div>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Online Consultation</a></li>
+            <li><a href="#services">Home Visit</a></li>
+            <li><a href="#services">Recovery Program</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Conditions</div>
+          <ul class="footer-links">
+            <li><a href="#conditions">Back &amp; Neck Pain</a></li>
+            <li><a href="#conditions">Knee &amp; Arthritis</a></li>
+            <li><a href="#conditions">Sports Injuries</a></li>
+            <li><a href="#conditions">Stroke Rehab</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a></li>
+            <li><a href="tel:+91XXXXXXXXXX">Call Us</a></li>
+            <li><a href="#booking">Book Online</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2024 Elite Physio Care. Dr. Vaishnavi Ashokkumar Kadam, BPT, Pune University.</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.25);">Physiotherapist Pune · Home Physiotherapy Pune</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY CTA -->
+  <div class="sticky-cta">
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20book%20a%20physiotherapy%20session"
+      class="sticky-wa">
+      <span class="wa-icon">💬</span>
+      Book on WhatsApp
+    </a>
+    <a href="tel:+91XXXXXXXXXX" class="sticky-call">📞</a>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div>
-        <div class="footer-brand-name">Elite<span>Physio</span> Care</div>
-        <div class="footer-tagline">Professional physiotherapy at home and online — Pune, Maharashtra.</div>
-      </div>
-      <div>
-        <div class="footer-heading">Services</div>
-        <ul class="footer-links">
-          <li><a href="#services">Online Consultation</a></li>
-          <li><a href="#services">Home Visit</a></li>
-          <li><a href="#services">Recovery Program</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-heading">Conditions</div>
-        <ul class="footer-links">
-          <li><a href="#conditions">Back &amp; Neck Pain</a></li>
-          <li><a href="#conditions">Knee &amp; Arthritis</a></li>
-          <li><a href="#conditions">Sports Injuries</a></li>
-          <li><a href="#conditions">Stroke Rehab</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-heading">Contact</div>
-        <ul class="footer-links">
-          <li><a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a></li>
-          <li><a href="tel:+91XXXXXXXXXX">Call Us</a></li>
-          <li><a href="#booking">Book Online</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">© 2024 Elite Physio Care. Dr. Vaishnavi Ashokkumar Kadam, BPT, Pune University.</div>
-      <div style="font-size:13px;color:rgba(255,255,255,0.25);">Physiotherapist Pune · Home Physiotherapy Pune</div>
-    </div>
-  </div>
-</footer>
+  <script>
+    // ── NAV SCROLL ──
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    }, { passive: true });
 
-<!-- STICKY CTA -->
-<div class="sticky-cta">
-  <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20book%20a%20physiotherapy%20session" class="sticky-wa">
-    <span class="wa-icon">💬</span>
-    Book on WhatsApp
-  </a>
-  <a href="tel:+91XXXXXXXXXX" class="sticky-call">📞</a>
-</div>
+    // ── MOBILE MENU ──
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-<script>
-// ── NAV SCROLL ──
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 60) navbar.classList.add('scrolled');
-  else navbar.classList.remove('scrolled');
-}, { passive: true });
-
-// ── HERO ENTRANCE ──
-window.addEventListener('DOMContentLoaded', () => {
-  const eyebrow = document.getElementById('hero-eyebrow');
-  const headline = document.getElementById('hero-headline');
-  const sub = document.getElementById('hero-sub');
-  const actions = document.getElementById('hero-actions');
-  const trust = document.getElementById('hero-trust');
-  const photo = document.getElementById('hero-photo');
-
-  const animEl = (el, delay) => {
-    if (!el) return;
-    setTimeout(() => {
-      el.style.transition = 'opacity 0.8s cubic-bezier(0.25,0.1,0.25,1), transform 0.8s cubic-bezier(0.25,0.1,0.25,1)';
-      el.style.opacity = '1';
-      el.style.transform = 'translateY(0) translateX(0)';
-    }, delay);
-  };
-
-  animEl(eyebrow, 200);
-  animEl(headline, 400);
-  animEl(sub, 600);
-  animEl(actions, 750);
-  animEl(trust, 900);
-  animEl(photo, 500);
-});
-
-// ── INTERSECTION OBSERVER REVEALS ──
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-
-document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
-
-// ── COUNTER ANIMATION ──
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting && !e.target.dataset.counted) {
-      e.target.dataset.counted = 'true';
-      const target = parseInt(e.target.dataset.count);
-      const suffix = e.target.dataset.count == '100' ? '%' : (e.target.dataset.count == '2' ? '' : '+');
-      let current = 0;
-      const duration = 1800;
-      const startTime = performance.now();
-      const tick = (now) => {
-        const elapsed = now - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const ease = 1 - Math.pow(1 - progress, 3);
-        current = Math.round(ease * target);
-        e.target.textContent = current + (progress >= 1 ? suffix : '');
-        if (progress < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-    }
-  });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
-
-// ── JOURNEY PROGRESS ──
-const journeyObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const line = document.getElementById('progressLine');
-      const steps = document.querySelectorAll('.journey-step');
-      if (line) {
-        setTimeout(() => { line.style.width = '80%'; }, 300);
-      }
-      steps.forEach((step, i) => {
-        setTimeout(() => step.classList.add('active'), 200 + i * 200);
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', () => {
+        mobileToggle.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
       });
     }
-  });
-}, { threshold: 0.3 });
 
-const journeyTrack = document.getElementById('journeyTrack');
-if (journeyTrack) journeyObserver.observe(journeyTrack);
+    function closeMobileMenu() {
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
 
-// ── FORM SUBMIT ──
-function handleForm(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('.form-submit');
-  const name = document.getElementById('name').value;
-  const phone = document.getElementById('phone').value;
-  const condition = document.getElementById('condition').value;
-  const consult = document.getElementById('consult').value;
-  const msg = encodeURIComponent(`Hi Dr. Vaishnavi,\n\nI'd like to book a session.\n\nName: ${name}\nPhone: ${phone}\nCondition: ${condition || 'Not specified'}\nPreferred: ${consult || 'To be discussed'}\n\nThank you!`);
-  btn.textContent = 'Redirecting to WhatsApp...';
-  btn.style.background = '#25D366';
-  setTimeout(() => {
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${msg}`, '_blank');
-    btn.textContent = 'Book My Session →';
-    btn.style.background = '';
-  }, 1000);
-}
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (mobileMenu && mobileToggle && !mobileMenu.contains(e.target) && !mobileToggle.contains(e.target) && mobileMenu.classList.contains('active')) {
+        closeMobileMenu();
+      }
+    });
 
-// ── GSAP SCROLL PARALLAX (subtle) ──
-if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    // ── HERO ENTRANCE ──
+    window.addEventListener('DOMContentLoaded', () => {
+      const eyebrow = document.getElementById('hero-eyebrow');
+      const headline = document.getElementById('hero-headline');
+      const sub = document.getElementById('hero-sub');
+      const actions = document.getElementById('hero-actions');
+      const trust = document.getElementById('hero-trust');
+      const photo = document.getElementById('hero-photo');
 
-  gsap.to('.hero-bg-shape', {
-    y: -100,
-    ease: 'none',
-    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
-  });
+      const animEl = (el, delay) => {
+        if (!el) return;
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.8s cubic-bezier(0.25,0.1,0.25,1), transform 0.8s cubic-bezier(0.25,0.1,0.25,1)';
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0) translateX(0)';
+        }, delay);
+      };
 
-  gsap.to('.hero-bg-shape2', {
-    y: -60,
-    ease: 'none',
-    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
-  });
-}
-</script>
+      animEl(eyebrow, 200);
+      animEl(headline, 400);
+      animEl(sub, 600);
+      animEl(actions, 750);
+      animEl(trust, 900);
+      animEl(photo, 500);
+    });
+
+    // ── INTERSECTION OBSERVER REVEALS ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+    // ── COUNTER ANIMATION ──
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !e.target.dataset.counted) {
+          e.target.dataset.counted = 'true';
+          const target = parseInt(e.target.dataset.count);
+          const suffix = e.target.dataset.count == '100' ? '%' : (e.target.dataset.count == '2' ? '' : '+');
+          let current = 0;
+          const duration = 1800;
+          const startTime = performance.now();
+          const tick = (now) => {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const ease = 1 - Math.pow(1 - progress, 3);
+            current = Math.round(ease * target);
+            e.target.textContent = current + (progress >= 1 ? suffix : '');
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+    // ── JOURNEY PROGRESS ──
+    const journeyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const line = document.getElementById('progressLine');
+          const steps = document.querySelectorAll('.journey-step');
+          if (line) {
+            setTimeout(() => { line.style.width = '80%'; }, 300);
+          }
+          steps.forEach((step, i) => {
+            setTimeout(() => step.classList.add('active'), 200 + i * 200);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const journeyTrack = document.getElementById('journeyTrack');
+    if (journeyTrack) journeyObserver.observe(journeyTrack);
+
+    // ── FORM SUBMIT ──
+    function handleForm(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.form-submit');
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const condition = document.getElementById('condition').value;
+      const consult = document.getElementById('consult').value;
+      const msg = encodeURIComponent(`Hi Dr. Vaishnavi,\n\nI'd like to book a session.\n\nName: ${name}\nPhone: ${phone}\nCondition: ${condition || 'Not specified'}\nPreferred: ${consult || 'To be discussed'}\n\nThank you!`);
+      btn.textContent = 'Redirecting to WhatsApp...';
+      btn.style.background = '#25D366';
+      setTimeout(() => {
+        window.open(`https://wa.me/91XXXXXXXXXX?text=${msg}`, '_blank');
+        btn.textContent = 'Book My Session →';
+        btn.style.background = '';
+      }, 1000);
+    }
+
+    // ── GSAP SCROLL PARALLAX (subtle) ──
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to('.hero-bg-shape', {
+        y: -100,
+        ease: 'none',
+        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+      });
+
+      gsap.to('.hero-bg-shape2', {
+        y: -60,
+        ease: 'none',
+        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+      });
+    }
+  </script>
 </body>
+
 </html>
